@@ -1,0 +1,52 @@
+<!--
+<div  >
+    <h1>Kowsalya</h1>
+    <h1>Santhosh</h1>
+</div>
+<script>
+    var div=document.querySelector("div")
+    var h1=document.createElement("h1")
+    h1.textContent="Hello"
+    div.insertAdjacentElement("beforebegin",h1)
+</script>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    h1{
+        text-align: center;
+    }
+    input {
+       border: 20px solid #ccc;
+       padding: 10px 10px;
+       border-radius: 20px;
+       
+}
+</style>
+</head>
+<body>
+<h1>ToDo List</h1>
+<input id="input">
+<button onclick="add()">Add</button>
+<ul id="list-container">
+    <li>Hello
+        <button onclick="deleteItem(event)">Delete</button>
+    </li>
+
+</ul>
+
+<script>
+    var ul=document.getElementById("list-container")
+    var input=document.getElementById("input")
+    function add(){
+        var listItem=document.createElement("li")
+        listItem.innerHTML=input.value +"<button onclick='deleteItem(event)'>Delete</button>"
+        ul.append(listItem)
+    }
+    function deleteItem(event){
+        event.target.parentElement.remove()
+    }
+</script>
+</body>
+</html>

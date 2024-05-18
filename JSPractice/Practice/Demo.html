@@ -1,0 +1,60 @@
+<!--
+<h1 id="h1">Hello</h1>
+<button onclick="change()">Change</button>
+<script>
+    var h1=document.getElementById("h1")
+    console.log(h1.textContent)
+    //para.textContent="Bye"
+    function change(){
+        h1.textContent="Bye"
+    }
+    
+</script>
+
+<input id="num1">
+<input id="num2">
+<button onclick="add()">Add</button>
+<p id="result">Result</p>
+<script>
+    function add(){
+    var box1=document.getElementById("num1")
+    var box2=document.getElementById("num2")
+    var result=document.getElementById("result")
+
+    var b1value=Number(box1.value)
+    var b2value=Number(box2.value) 
+    var total=b1value+b2value;
+    result.textContent=total
+    }
+</script>
+-
+
+<h1>Guess the Number</h1>
+<input id="num">
+<button onclick="check()">Check</button>
+<p id="result">You are Wrong/Right</p>
+<p id="score">Score:10</p>
+
+<script>
+    var guess=document.getElementById("num")
+    var result=document.getElementById("result")
+    var randomNum=Math.floor(Math.random()*10)+1
+    var score=document.getElementById("score")
+    var sc=10;
+    function check(){
+        var enteredNum=guess.value 
+        if(randomNum==guess){
+            result.textContent="Right"
+            alert("You won!!");
+        }
+        else{
+            sc=sc-1
+            score.textContent="Score: "+sc
+            result.textContent="Wrong"
+            if(sc==0){
+                che
+            }
+        }
+    }
+</script>
+-->
